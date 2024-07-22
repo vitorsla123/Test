@@ -2554,7 +2554,7 @@ end)
         BypassTP = Value		
     end)
     
-    local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Bật Haki", Default = false })
+    local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Ligar Haki", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AUTOHAKI = Value
@@ -2573,7 +2573,7 @@ end)
     end
 end)
 
-local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Bật Haki Quan Sát", Default = false })
+local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Ligar Haki da Obs", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AUTOKen = Value
@@ -2596,13 +2596,13 @@ local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Bật Haki Quan Sá
         end
     end)    
        
-   local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Đánh Nhanh + Tự Động Click", Default = true })
+   local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Golpe Rapido + Click automatico", Default = true })
 
     Toggle:OnChanged(function(Value)
       UFFF = Value
     end)
       
-    local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Đánh Quái Gần", Default = false })
+    local Toggle = Tabs.Settings:AddToggle("MyToggle", {Title = "Golpe rapido2", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.FastAttack2 = Value
@@ -3074,7 +3074,7 @@ task.spawn(function()
        end)
     
     local Slider = Tabs.Settings:AddSlider("Slider", {
-        Title = "Mate o monstro em % Máu[Mastery]",
+        Title = "Mate o monstro em % [Mastery]",
         Description = "",
         Default = 70,
         Min = 0,
@@ -3263,9 +3263,9 @@ spawn(function()
 	end
     end)
     
-    Tabs.Main:AddSection("Nhiệm Vụ Qua Các Sea")
+    Tabs.Main:AddSection(" Sea")
     
-    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Nhiệm Vụ Qua Sea 2", Default = false })
+    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Fazer Missão Sea 2", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoSecondSea = Value
@@ -3327,7 +3327,7 @@ spawn(function()
         end)
     end
     
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Nhiệm Vụ Qua Sea 3", Default = false })
+local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Fazer Missão Sea 3", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoThirdSea = Value
@@ -3378,7 +3378,7 @@ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Nhiệm Vụ Qua Sea 3"
     
     Tabs.Main:AddSection("Farm Thông Thạo")
     
-    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Farm Thông Thạo Trái", Default = false })
+    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Farm Fruit Mastery", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoFarmFruitMastery = Value
@@ -3675,9 +3675,9 @@ spawn(function()
     end)
 end)
     
-    Tabs.Main:AddSection("Xương")
+    Tabs.Main:AddSection("Ossos")
     
-    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Farm Xương", Default = false })
+    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Farm Ossos", Default = false })
 
     Toggle:OnChanged(function(Value)
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
@@ -3743,7 +3743,7 @@ end)
         end
     end)    
     
-    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Random Xương", Default = false })
+    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Girar Ossos", Default = false })
 
     Toggle:OnChanged(function(Value)
 		_G.Auto_Random_Bone = Value
@@ -3759,7 +3759,7 @@ end)
     
     Tabs.Main:AddSection("Tư Lệnh Bột")
     
-    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Farm Tư Lệnh Bột Và Triệu Hồi Boss", Default = false })
+    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Farm Conjured cocoa + Summon Boss", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoDoughtBoss = Value
@@ -3812,11 +3812,11 @@ end)
 	end)
         
     Tabs.Ms:AddParagraph({
-        Title = "Sự Kiện Game",
-        Content = "Đánh Nhà Máy Và Tập Kích Hải Tặc"
+        Title = "Game Events",
+        Content = "Auto Factory + Auto Raid Pirate"
     })
     
-    local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Đánh Nhà Máy", Default = false })
+    local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Auto Factory", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoFactory = Value
@@ -3847,7 +3847,7 @@ end)
             end
         end)
         
-        local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Tập Kích Hải Tặc [Beta]", Default = false })
+        local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Auto Pirate Raid [Beta]", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoRaidPirate = Value
@@ -3890,12 +3890,12 @@ end)
     end)
     
     Tabs.Ms:AddParagraph({
-        Title = "Farm Haki Quan Sát",
+        Title = "Farm Haki ",
         Content = ""
     })
     
  local ObservationRange = Tabs.Ms:AddParagraph({
-        Title = "Thông Tin Haki Quan Sát",
+        Title = "Observação Haki Informações",
         Content = ""
     })
     
@@ -3907,7 +3907,7 @@ end)
         end
     end)
     
-    local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Farm Điểm Của Haki Quan Sát", Default = false })
+    local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Farm  Pontos de Observação Haki", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoObservation = Value
@@ -4004,7 +4004,7 @@ end)
         end)
     end)
     
-    local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Nhiệm Vụ Haki Quan Sát V2", Default = false })
+    local Toggle = Tabs.Ms:AddToggle("MyToggle", {Title = "Auto Obs Haki V2", Default = false })
 
     Toggle:OnChanged(function(Value)
         _G.AutoObservationHakiV2 = Value
